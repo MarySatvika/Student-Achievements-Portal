@@ -1,0 +1,66 @@
+.admin-container {
+  background-color: #f5f5f5;
+  min-height: 100vh;
+}
+
+.admin-main {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 30px 20px;
+}
+
+.admin-main h1 {
+  color: #333;
+  margin-bottom: 30px;
+}
+
+.achievements-table {
+  background: white;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  overflow: hidden;
+}
+
+.achievements-table table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.achievements-table thead {
+  background-color: #333;
+  color: white;
+}
+
+.achievements-table th {
+  padding: 15px;
+  text-align: left;
+  font-weight: bold;
+}
+
+.achievements-table td {
+  padding: 15px;
+  border-bottom: 1px solid #eee;
+}
+
+.achievements-table tbody tr:hover {
+  background-color: #f9f9f9;
+}
+
+.achievements-table button {
+  background-color: #3498db;
+  padding: 8px 12px;
+  font-size: 12px;
+  margin-right: 8px;
+}
+
+.achievements-table button:hover {
+  background-color: #2980b9;
+}
+
+.achievements-table button:last-child {
+  background-color: #e74c3c;
+}
+
+.achievements-table button:last-child:hover {
+  background-color: #c0392b;
+}

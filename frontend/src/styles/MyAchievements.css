@@ -1,0 +1,73 @@
+.achievements-container {
+  background-color: #f5f5f5;
+  min-height: 100vh;
+}
+
+.achievements-main {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 30px 20px;
+}
+
+.achievements-main h1 {
+  color: #333;
+  margin-bottom: 20px;
+}
+
+.btn-submit {
+  background-color: #27ae60;
+  padding: 12px 20px;
+  margin-bottom: 30px;
+}
+
+.btn-submit:hover {
+  background-color: #229954;
+}
+
+.achievements-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 20px;
+}
+
+.achievement-card {
+  background: white;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.achievement-card h3 {
+  margin-top: 0;
+  color: #333;
+}
+
+.achievement-card p {
+  margin: 10px 0;
+  color: #666;
+  font-size: 14px;
+}
+
+.badge {
+  display: inline-block;
+  padding: 4px 12px;
+  border-radius: 20px;
+  font-size: 12px;
+  font-weight: bold;
+  text-transform: capitalize;
+}
+
+.badge.admin_approved, .badge.approved {
+  background-color: #d4edda;
+  color: #155724;
+}
+
+.badge.pending, .badge.counsellor_approved {
+  background-color: #fff3cd;
+  color: #856404;
+}
+
+.badge.counsellor_rejected, .badge.admin_rejected, .badge.rejected {
+  background-color: #f8d7da;
+  color: #721c24;
+}
