@@ -339,7 +339,7 @@ const FacultyDashboard = () => {
         <section className="stats-section">
           <div className="stat-card total" style={{ position: 'relative' }}>
             <img 
-              src="/logo512.png" 
+              src="/fav-icon.ico" 
               alt="Total Achievements Icon" 
               className="dashboard-icon"
               style={{ width: '30px', height: '30px', position: 'absolute', top: '10px', right: '10px' }}
@@ -349,7 +349,7 @@ const FacultyDashboard = () => {
           </div>
           <div className="stat-card approved" style={{ position: 'relative' }}>
             <img 
-              src="/logo512.png" 
+              src="/fav-icon.ico" 
               alt="Approved Icon" 
               className="dashboard-icon"
               style={{ width: '30px', height: '30px', position: 'absolute', top: '10px', right: '10px' }}
@@ -359,7 +359,7 @@ const FacultyDashboard = () => {
           </div>
           <div className="stat-card pending" style={{ position: 'relative' }}>
             <img 
-              src="/logo512.png" 
+              src="/fav-icon.ico" 
               alt="Pending Icon" 
               className="dashboard-icon"
               style={{ width: '30px', height: '30px', position: 'absolute', top: '10px', right: '10px' }}
@@ -369,7 +369,7 @@ const FacultyDashboard = () => {
           </div>
           <div className="stat-card rejected" style={{ position: 'relative' }}>
             <img 
-              src="/logo512.png" 
+              src="/fav-icon.ico" 
               alt="Rejected Icon" 
               className="dashboard-icon"
               style={{ width: '30px', height: '30px', position: 'absolute', top: '10px', right: '10px' }}
