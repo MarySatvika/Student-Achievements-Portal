@@ -203,7 +203,7 @@ const FacultyDashboard = () => {
         <section className="welcome-section">
           <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'center', gap: '20px', flexWrap: 'wrap' }}>
             <img 
-              src="/logo192.png" 
+              src="/fav-icon.ico" 
               alt="Faculty Dashboard Logo" 
               className="dashboard-logo"
               style={{ width: '80px', height: '80px' }}
