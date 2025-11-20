@@ -2,7 +2,7 @@ import axios from 'axios';
 
 // Create an axios instance
 const API = axios.create({
-  baseURL: "https://student-achievements-portal.onrender.com",
+  baseURL: process.env.REACT_APP_API_URL || 'http://localhost:5000',
   headers: {
     'Content-Type': 'application/json',
   },
