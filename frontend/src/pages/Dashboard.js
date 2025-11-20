@@ -101,7 +101,6 @@ const Dashboard = () => {
         
       setRecentAchievements(recent);
       
-      // Fetch user stats (points and badges)
       try {
         const statsResponse = await achievementAPI.getUserStats();
         const userStats = statsResponse.data;
@@ -113,11 +112,10 @@ const Dashboard = () => {
         }));
       } catch (statsError) {
         console.error('Error fetching user stats:', statsError);
-        // Don't block the rest of the dashboard if stats fail
       }
     } catch (error) {
       console.error('Error fetching dashboard data:', error);
-      // Show error to user
+     
       alert('Error fetching dashboard data. Please try again.');
     }
   };
@@ -164,7 +162,6 @@ const Dashboard = () => {
     alert(`You clicked on: ${level.name}\nThis segment represents achievements at the ${level.name} level.`);
   };
   
-  // Show loading state while checking authentication
   if (user === null) {
     return (
       <div style={{ display: 'flex', justifyContent: 'center', alignItems: 'center', height: '100vh' }}>
@@ -173,7 +170,6 @@ const Dashboard = () => {
     );
   }
   
-  // Redirect to login if not authenticated
   if (!user) {
     navigate('/login');
     return null;
@@ -181,7 +177,7 @@ const Dashboard = () => {
 
   return (
     <div className="student-dashboard">
-      {/* Header with Navigation */}
+  
       <header className="dashboard-header">
         <div className="header-left">
           <h2 className="sap-logo">SAP</h2>
@@ -199,7 +195,7 @@ const Dashboard = () => {
         <section className="welcome-section">
           <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'center', gap: '20px', flexWrap: 'wrap' }}>
             <img 
-              src="/logo192.png" 
+              src="fav-icon.ico" 
               alt="Student Achievement Portal Logo" 
               className="dashboard-logo"
               style={{ width: '80px', height: '80px' }}
@@ -246,7 +242,7 @@ const Dashboard = () => {
             position: 'relative'
           }}>
             <img 
-              src="/logo512.png" 
+              src="/fav-icon.ico" 
               alt="Points Icon" 
               className="dashboard-icon"
               style={{ width: '50px', height: '50px', position: 'absolute', top: '-25px', left: '50%', transform: 'translateX(-50%)' }}
@@ -272,7 +268,7 @@ const Dashboard = () => {
             position: 'relative'
           }}>
             <img 
-              src="/logo192.png" 
+              src="/fav-icon.ico" 
               alt="Badge Icon" 
               className="dashboard-icon"
               style={{ width: '50px', height: '50px', position: 'absolute', top: '-25px', left: '50%', transform: 'translateX(-50%)' }}
