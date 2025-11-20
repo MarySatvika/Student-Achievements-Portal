@@ -1,0 +1,31 @@
+.badge-display {
+  display: inline-block;
+  padding: 5px 10px;
+  border-radius: 15px;
+  font-weight: bold;
+  text-transform: capitalize;
+}
+
+.badge-gold {
+  background-color: #FFD700;
+  color: #000;
+  border: 1px solid #D4AF37;
+}
+
+.badge-silver {
+  background-color: #C0C0C0;
+  color: #000;
+  border: 1px solid #A0A0A0;
+}
+
+.badge-bronze {
+  background-color: #CD7F32;
+  color: #fff;
+  border: 1px solid #A65A26;
+}
+
+.badge-participant {
+  background-color: #4169E1;
+  color: #fff;
+  border: 1px solid #3254C8;
+}
